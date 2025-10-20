@@ -18,13 +18,9 @@ Function ini berfungsi untuk memvalidasi data yang diedit, memperbarui data dokt
 
 Berikut tampilan contoh kode yang telah diimplementasikan:
 
-![Contoh Function Update - DokterController](public/gambar/Screenshot (186))
-![Form Create Dokter - Field No HP](public/gambar/Screenshot (185))
-![Form Create Dokter - Field Password](public/gambar/Screenshot (184))
-
-![Contoh Function Update - DokterController](poliklinik-app/public/gambar/Screenshot (186))
-![Form Create Dokter - Field No HP](poliklinik-app/public/gambar/form_nohp.png)
-![Form Create Dokter - Field Password](poliklinik-app/public/gambar/form_password.png)
+![Contoh Function Update - DokterController](public/gambar/Screenshot(186))
+![Form Create Dokter - Field No HP](public/gambar/Screenshot(185))
+![Form Create Dokter - Field Password](public/gambar/Screenshot(184))
 
 
 ## ⚙️ Teknologi yang Digunakan
