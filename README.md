@@ -22,6 +22,10 @@ Berikut tampilan contoh kode yang telah diimplementasikan:
 ![Form Create Dokter - Field No HP](public/gambar/Screenshot (185))
 ![Form Create Dokter - Field Password](public/gambar/Screenshot (184))
 
+![Contoh Function Update - DokterController](poliklinik-app/public/gambar/Screenshot (186))
+![Form Create Dokter - Field No HP](poliklinik-app/public/gambar/form_nohp.png)
+![Form Create Dokter - Field Password](poliklinik-app/public/gambar/form_password.png)
+
 
 ## ⚙️ Teknologi yang Digunakan
 - Laravel 10
