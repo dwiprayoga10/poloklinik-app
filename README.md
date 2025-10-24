@@ -10,11 +10,11 @@ Function ini berfungsi untuk memvalidasi data yang diedit, memperbarui data dokt
 Berikut tampilan contoh kode yang telah diimplementasikan:
 
 <p align="center">
-  <img src="gambar1" alt="Contoh Function Update - DokterController" width="450">
+  <img src="gambar1.png" alt="Contoh Function Update - DokterController" width="450">
 </p>
 
 <p align="center">
-  <img src="gambar2" alt="Form Create Dokter - Field No HP" width="450">
+  <img src="gambar2.png" alt="Form Create Dokter - Field No HP" width="450">
 </p>
 
 
