@@ -52,6 +52,29 @@ class User extends Authenticatable
         ];
     }
 
+    public static function generateNoRM()
+{
+    // Format: Tahun + Bulan + '-' + Nomor urut
+    $tanggal = date('Ym'); // contoh: 202510
+
+    // Cari user terakhir dengan no_rm yang mirip (misal bulan yang sama)
+    $last = self::where('no_rm', 'like', $tanggal . '%')->orderBy('id', 'desc')->first();
+
+    if ($last) {
+        // Ambil 3 digit terakhir
+        $lastNumber = (int) substr($last->no_rm, -3);
+        $newNumber = str_pad($lastNumber + 1, 3, '0', STR_PAD_LEFT);
+    } else {
+        $newNumber = '001';
+    }
+
+    return $tanggal . '-' . $newNumber; // contoh hasil: 202510-001
+}
+
+
+
+
+
     public function poli(){
         return $this->belongsTo(Poli::class, 'id_poli');
     }
