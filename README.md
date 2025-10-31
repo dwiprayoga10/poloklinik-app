@@ -4,28 +4,28 @@ Aplikasi **Sistem Informasi Poliklinik Bengkod** adalah proyek berbasis web yang
 
 ---
 
-## 🚀 Fitur Utama
+## Fitur Utama
 
-### 👨‍💼 Admin
+### Admin
 - Mengelola data **dokter**, **pasien**, dan **poli**.
 - Mengatur jadwal periksa dokter.
 - Melihat laporan data pendaftaran dan pemeriksaan pasien.
 - CRUD data master (poli, user, jadwal, rekam medis).
 
-### 🩺 Dokter
+### Dokter
 - Melihat jadwal praktik pribadi.
 - Melihat daftar pasien yang terdaftar pada jadwalnya.
 - Mengisi hasil pemeriksaan pasien.
 - Menambahkan diagnosa dan resep obat.
 
-### 🧑‍🤝‍🧑 Pasien
+### Pasien
 - Melakukan **pendaftaran online** ke poli yang diinginkan.
 - Melihat riwayat pemeriksaan dan hasil diagnosa.
 - Melihat informasi jadwal dokter.
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+##  Teknologi yang Digunakan
 
 | Komponen | Teknologi |
 |----------|------------|
@@ -35,7 +35,7 @@ Aplikasi **Sistem Informasi Poliklinik Bengkod** adalah proyek berbasis web yang
 
 ---
 
-## ⚙️ Cara Instalasi dan Menjalankan Aplikasi
+##  Cara Instalasi dan Menjalankan Aplikasi
 
 Ikuti langkah-langkah berikut untuk menjalankan aplikasi di lokal Anda:
 
@@ -78,11 +78,11 @@ php artisan serve
 ```
 
 Akses aplikasi melalui:  
-👉 http://localhost:8000
+http://localhost:8000
 
 ---
 
-## 👥 Akun Default (Seeder)
+## Akun Default (Seeder)
 | Role | Email | Password |
 |------|--------|-----------|
 | Admin | admin@gmail.com | password |
@@ -91,7 +91,7 @@ Akses aplikasi melalui:
 
 ---
 
-## 📸 Tampilan Antarmuka
+## Tampilan Antarmuka
 - Dashboard Admin dengan statistik jumlah dokter, pasien, dan poli.
 - Halaman Jadwal Dokter untuk melihat dan mengatur jadwal periksa.
 - Form Pendaftaran Pasien ke Poli.
@@ -99,7 +99,7 @@ Akses aplikasi melalui:
 
 ---
 
-## 📦 Struktur Folder Penting
+## Struktur Folder Penting
 ```
 app/
  ├── Http/
