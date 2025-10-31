@@ -1,44 +1,148 @@
-# 🏥 Tugas Laravel — Manajemen Obat
+# 🏥 Sistem Informasi Poliklinik Bengkod
 
-Repositori ini merupakan hasil pengerjaan tugas mata kuliah Bengkel Koding pertemuan ke-3 dengan topik Manajemen Dokter.  
-Tugas ini berfokus pada penerapan validasi data, proses update data dokter, serta penambahan field baru pada halaman form input data dokter menggunakan framework Laravel.
-
----
-
-Function ini berfungsi untuk memvalidasi data yang diedit, memperbarui data dokter di database, serta melakukan pengecekan jika password diubah.
-
-Berikut tampilan contoh kode yang telah diimplementasikan:
-
-<p align="center">
-  <img src="gambar1.png" alt="Contoh Function Update - DokterController" width="450">
-</p>
-
-<p align="center">
-  <img src="gambar2.png" alt="Form Create Dokter - Field No HP" width="450">
-</p>
-
-
+Aplikasi **Sistem Informasi Poliklinik Bengkod** adalah proyek berbasis web yang dibuat menggunakan **Laravel** dengan **Tailwind CSS** sebagai frontend framework. Sistem ini dirancang untuk mempermudah proses administrasi, pelayanan medis, dan pendaftaran pasien di lingkungan klinik atau poliklinik.
 
 ---
 
-## ⚙️ Teknologi yang Digunakan
-- Laravel 11
-- Blade Template  
-- Bootstrap 5  
-- MySQL Database  
+## 🚀 Fitur Utama
+
+### 👨‍💼 Admin
+- Mengelola data **dokter**, **pasien**, dan **poli**.
+- Mengatur jadwal periksa dokter.
+- Melihat laporan data pendaftaran dan pemeriksaan pasien.
+- CRUD data master (poli, user, jadwal, rekam medis).
+
+### 🩺 Dokter
+- Melihat jadwal praktik pribadi.
+- Melihat daftar pasien yang terdaftar pada jadwalnya.
+- Mengisi hasil pemeriksaan pasien.
+- Menambahkan diagnosa dan resep obat.
+
+### 🧑‍🤝‍🧑 Pasien
+- Melakukan **pendaftaran online** ke poli yang diinginkan.
+- Melihat riwayat pemeriksaan dan hasil diagnosa.
+- Melihat informasi jadwal dokter.
 
 ---
 
-## 💡 Catatan Tambahan
-Pastikan sudah menjalankan perintah berikut sebelum testing:
+## 🛠️ Teknologi yang Digunakan
+
+| Komponen | Teknologi |
+|----------|------------|
+| Backend  | Laravel 10 |
+| Frontend | Tailwind CSS |
+| Database | MySQL |
+| Authentication | Laravel Breeze / Auth |
+| Server | PHP >= 8.1 |
+
+---
+
+## ⚙️ Cara Instalasi dan Menjalankan Aplikasi
+
+Ikuti langkah-langkah berikut untuk menjalankan aplikasi di lokal Anda:
+
+### 1. Clone Repository
 ```bash
-php artisan migrate
+git clone https://github.com/dwiprayoga10/poloklinik-app.git
+cd poloklinik-app
+```
+
+### 2. Install Dependency
+```bash
+composer install
+npm install
+npm run dev
+```
+
+### 3. Buat File Environment
+Salin file `.env.example` menjadi `.env`
+```bash
+cp .env.example .env
+```
+
+### 4. Konfigurasi Database
+Buka file `.env` dan ubah pengaturan sesuai dengan database lokal Anda:
+```
+DB_DATABASE=poliklinik
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### 5. Generate Key dan Migrasi Database
+```bash
+php artisan key:generate
+php artisan migrate --seed
+```
+
+### 6. Jalankan Server
+```bash
 php artisan serve
 ```
-Jika terdapat error validasi, pastikan field pada form sesuai dengan nama kolom di database.
+
+Akses aplikasi melalui:  
+👉 http://localhost:8000
 
 ---
 
-## ✨ Kontributor
-**Dwi Prayoga**  
-BENGKEL KODING UDINUS
+## 👥 Akun Default (Seeder)
+| Role | Email | Password |
+|------|--------|-----------|
+| Admin | admin@gmail.com | password |
+| Dokter | dokter@gmail.com | password |
+| Pasien | pasien@gmail.com | password |
+
+---
+
+## 📸 Tampilan Antarmuka
+- Dashboard Admin dengan statistik jumlah dokter, pasien, dan poli.
+- Halaman Jadwal Dokter untuk melihat dan mengatur jadwal periksa.
+- Form Pendaftaran Pasien ke Poli.
+- Riwayat Pemeriksaan Pasien dengan hasil diagnosa.
+
+---
+
+## 📦 Struktur Folder Penting
+```
+app/
+ ├── Http/
+ │    ├── Controllers/
+ │    │     ├── Admin/
+ │    │     ├── Dokter/
+ │    │     ├── Pasien/
+ │    │     └── AuthController.php
+ │
+ ├── Models/
+ └── ...
+resources/
+ ├── views/
+ │    ├── admin/
+ │    ├── dokter/
+ │    ├── pasien/
+ │    └── auth/
+```
+
+---
+
+## 🤝 Kontribusi
+Kontribusi sangat terbuka! Jika ingin menambahkan fitur atau memperbaiki bug:
+1. Fork repo ini.
+2. Buat branch baru (`feature/namafitur`).
+3. Lakukan perubahan.
+4. Kirim Pull Request.
+
+---
+
+## 🧾 Lisensi
+Proyek ini dibuat untuk keperluan **pembelajaran** dan **tugas kuliah** pada mata kuliah *Pemrograman Berbasis Framework*.  
+Dikembangkan oleh **Dwi Prayoga**.
+
+---
+
+### 📧 Kontak
+Jika ada pertanyaan atau saran, hubungi melalui:
+- Email: [dwiprayoga10@gmail.com](mailto:dwiprayoga10@gmail.com)
+- GitHub: [dwiprayoga10](https://github.com/dwiprayoga10)
+
+---
+
+> “Membangun sistem pelayanan kesehatan yang efisien dan modern untuk mendukung digitalisasi klinik.”
