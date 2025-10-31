@@ -61,7 +61,7 @@ cp .env.example .env
 ### 4. Konfigurasi Database
 Buka file `.env` dan ubah pengaturan sesuai dengan database lokal Anda:
 ```
-DB_DATABASE=poliklinik
+DB_DATABASE=poliklinik_db
 DB_USERNAME=root
 DB_PASSWORD=
 ```
