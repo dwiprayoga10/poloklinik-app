@@ -1,4 +1,4 @@
-# 🏥 Sistem Informasi Poliklinik Bengkod
+# Sistem Informasi Poliklinik Bengkod
 
 Aplikasi **Sistem Informasi Poliklinik Bengkod** adalah proyek berbasis web yang dibuat menggunakan **Laravel** dengan **Tailwind CSS** sebagai frontend framework. Sistem ini dirancang untuk mempermudah proses administrasi, pelayanan medis, dan pendaftaran pasien di lingkungan klinik atau poliklinik.
 
