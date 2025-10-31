@@ -30,9 +30,7 @@ Aplikasi **Sistem Informasi Poliklinik Bengkod** adalah proyek berbasis web yang
 | Komponen | Teknologi |
 |----------|------------|
 | Backend  | Laravel 10 |
-| Frontend | Tailwind CSS |
 | Database | MySQL |
-| Authentication | Laravel Breeze / Auth |
 | Server | PHP >= 8.1 |
 
 ---
@@ -122,27 +120,3 @@ resources/
 ```
 
 ---
-
-## 🤝 Kontribusi
-Kontribusi sangat terbuka! Jika ingin menambahkan fitur atau memperbaiki bug:
-1. Fork repo ini.
-2. Buat branch baru (`feature/namafitur`).
-3. Lakukan perubahan.
-4. Kirim Pull Request.
-
----
-
-## 🧾 Lisensi
-Proyek ini dibuat untuk keperluan **pembelajaran** dan **tugas kuliah** pada mata kuliah *Pemrograman Berbasis Framework*.  
-Dikembangkan oleh **Dwi Prayoga**.
-
----
-
-### 📧 Kontak
-Jika ada pertanyaan atau saran, hubungi melalui:
-- Email: [dwiprayoga10@gmail.com](mailto:dwiprayoga10@gmail.com)
-- GitHub: [dwiprayoga10](https://github.com/dwiprayoga10)
-
----
-
-> “Membangun sistem pelayanan kesehatan yang efisien dan modern untuk mendukung digitalisasi klinik.”
